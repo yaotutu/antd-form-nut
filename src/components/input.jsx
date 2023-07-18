@@ -1,13 +1,16 @@
-const Input = (props) => {
-  return <input {...props} />;
-};
-const input = (props) => {
-  const { value = "", ...otherProps } = props;
-  return (
-    <div>
-      <Input value={value} {...otherProps} />
-    </div>
-  );
-};
 
-export default input;
+const Input = (props) => {
+  return (<input {...props} />)
+
+}
+const CunstomizeInput = (props) => {
+  const { value = "", ...otherProps } = props
+  console.log(props)
+  return (
+    <Input value={value} {...otherProps} />
+  )
+}
+
+export default CunstomizeInput
+
+
