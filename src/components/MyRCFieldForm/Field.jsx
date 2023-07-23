@@ -1,5 +1,8 @@
-import React from 'react'
-const Field = ({ children }) => {
+import React, { useContext } from 'react'
+import FieldContext from './FieldContext'
+
+cconst contextType = useContext(FieldContext)onst Field = ({ children }) => {
+  console.log('contextType:', contextType)
   const getControlled = () => {
     return {
       value: 'omg',

@@ -33,9 +33,9 @@ const useForm = () => {
   const formRef = useRef()
   if(!formRef.current){
     const formStore = new FormStore()
-    formRef.current = formStore
+    formRef.current = formStore.getForm()
   }
-  return []
+  return [formRef.current]
 }
 
 export default useForm

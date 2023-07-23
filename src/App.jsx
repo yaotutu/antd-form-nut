@@ -1,9 +1,12 @@
+import { useForm } from "./components/MyRCFieldForm"
 import Field from "./components/MyRCFieldForm/Field"
 import Form from "./components/MyRCFieldForm/Form"
 import Input from "./components/input"
 
 function App() {
 
+  const [form] = useForm()
+  console.log('form:', form)
   return (
     <>
     <div>

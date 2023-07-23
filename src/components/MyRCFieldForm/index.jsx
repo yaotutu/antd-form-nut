@@ -6,7 +6,7 @@ const Form = _Form;
 Form.Field = Field;
 Form.useForm = useForm;
 
-export default first
+export default Form
 
 export { Field, useForm };
 
